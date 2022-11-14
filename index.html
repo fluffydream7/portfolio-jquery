@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>portfolio-1</title>
+		<script src="./js/prefixfree.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+		<link rel="stylesheet" href="./css/animate.css">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/index.css">
+		<script src="./js/jquery-1.12.4.min.js"></script>
+		<script src="./js/jquery.mousewheel.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	</head>
+	<body>
+		<h1>Kim Seul</h1>
+		<!-- <h1>Skills</h1>
+		<h1>Projects</h1>
+		<h1>Contact Me</h1> -->     <!--h1 changes as u scroll-->
+		<ul id="menu">
+			<li class="on"><a href="#"><span>About Me</span></a></li>
+			<li><a href="#"><span>Skills</span></a></li>
+			<li><a href="#"><span>Projects</span></a></li>
+			<li><a href="#"><span>Contact Me</span></a></li>
+		</ul>
+		<ul class="sns">
+			<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fas fa-envelope"></i></a></li>
+		</ul>
+		<div id="wrap">
+			<section id="sect1">
+				<article class="personal-info">
+					<div class="info-box">
+						<div><img src="./img/profile.png" alt=""></div>
+						<div>
+							<div class="info">
+								<p>Name :</p>
+								<p>Kim Seul</p>
+							</div>
+							<div class="info">
+								<p>Age :</p>
+								<p>28</p>
+							</div>
+							<div class="info">
+								<p>Education :</p>
+								<p>New Bulgarian University</p>
+							</div>
+							<div class="info">
+								<p>Other :</p>
+								<p>Fluent in English</p>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<section id="sect2">
+				<article>
+					<div class="graphBox">
+						<div class="score">
+							<div class="myscore photo"></div>
+							<p>photoshop</p>
+						</div>
+						<div class="score">
+							<div class="myscore illur"></div>
+							<p>illustrator</p>
+						</div>
+						<div class="score">
+							<div class="myscore html"></div>
+							<p>html</p>
+						</div>
+						<div class="score">
+							<div class="myscore css"></div>
+							<p>css</p>
+						</div>
+						<div class="score">
+							<div class="myscore js"></div>
+							<p>javaScript</p>
+						</div>
+						<div class="score">
+							<div class="myscore jq"></div>
+							<p>jQuery</p>
+						</div>
+					</div>
+				</article>
+			</section>
+			<section id="sect3">    <!--slides of projects-->
+				<article class="slideshow">
+					<div class="web">
+						<div class="webbox">
+							<div class="pc">
+								<div class="overlay"></div>
+								<a href="https://fluffydream7.github.io/portfolio-dunkin/"><img src="./img/imac.png" alt="imac"></a>
+							</div>
+							<div class="tablet">
+								<div class="overlay"></div>
+								<a href="https://fluffydream7.github.io/portfolio-dunkin/"><img src="./img/ipad.png" alt="ipad"></a>
+							</div>
+							<div class="mobile">
+								<div class="overlay"></div>
+								<a href="https://fluffydream7.github.io/portfolio-dunkin/"><img src="./img/iphone.png" alt="iphone"></a>
+							</div>
+						</div>
+					</div>
+					<div class="web">
+						<div class="webbox">
+							<div class="pc pc_2">
+								<div class="overlay"></div>
+								<a href="https://fluffydream7.github.io/recipe-app/#/"><img src="./img/imac.png" alt="imac"></a>
+							</div>
+							<div class="tablet tablet_2">
+								<div class="overlay"></div>
+								<a href="https://fluffydream7.github.io/recipe-app/#/recipes"><img src="./img/ipad.png" alt="ipad"></a>
+							</div>
+							<div class="mobile mobile_2">
+								<div class="overlay"></div>
+								<a href="https://fluffydream7.github.io/recipe-app/#/recipes/1"><img src="./img/iphone.png" alt="iphone"></a>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<section id="sect4">     <!--contact box to spin and appear when scrolled down-->
+				<article class="contact">
+					<h2>Contact Me</h2>
+					<form class="gform" action="https://script.google.com/macros/s/AKfycbxESwn5j_rGCoVN3jU7Kfc_zWErXOXLzLYTxy_AgQ/exec"
+						method="post">
+						<table>
+							<colgroup>
+								<col>
+								<col>
+							</colgroup>
+							<tr>
+								<td>
+									<label for="irum">이름</label>
+								</td>
+								<td>
+									<input type="text" name="name" id="irum">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="email">이메일</label>
+								</td>
+								<td>
+									<input type="email" name="email" id="email">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="hp">핸드폰번호</label>
+								</td>
+								<td>
+									<input type="tel" name="hp" id="hp" placeholder="'-'포함해서 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="message">메세지</label>
+								</td>
+								<td>
+									<textarea name="message" id="message"></textarea>
+								</td>
+							</tr>
+						</table>
+						<div class="btn">
+							<button type="submit">보내기</button>
+						</div>
+					</form>
+				</article>
+			</section>
+		</div>
+		<div class="outer">
+			<div class="chargeBox">
+				<img src="./img/Hello.gif" alt="">
+				<div class="charge"></div>
+			</div>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

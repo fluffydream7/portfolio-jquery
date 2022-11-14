@@ -1,0 +1,583 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+html {
+    overflow-x: hidden
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #000;
+    color: #ffd77f;
+}
+
+h1 {
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 99;
+    transform: translate(0, 0) rotate(0deg);
+    transition: all 0.5s;
+}
+
+h1.on1 {
+    display: block;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(0deg);
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+h1.on2 {
+    top: 50%;
+    left: 90%;
+    transform: translate(0%, -50%) rotate(90deg);
+}
+
+h1.on3 {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%) rotate(0deg);
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+
+#menu {
+    position: fixed;
+    bottom: 10%;
+    left: 50px;
+    z-index: 99
+}
+
+#menu li {
+    margin: 20px 0;
+}
+
+#menu li a {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    font-size: 22px;
+    background-color: #fff;
+    position: relative;
+}
+
+#menu li.on a {
+    background-color: #ffd77f;
+    
+}
+
+#menu li a span {
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    width: 200px;
+    display: none;
+}
+
+#menu li.on a span {
+    display: block;
+}
+
+#menu li:hover a span {
+    display: block;
+}
+
+.sns {
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    display: flex;
+    z-index: 99;
+}
+
+.sns li {
+    font-size: 20px;
+    color: #ffd77f;
+    margin-left: 15px;
+    transition: all 0.5s
+}
+
+.sns li:hover {
+    transform: scale(1.5);
+    color: rgba(255, 255, 255, 0.5)
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: right center;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+section article {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.info-box {
+    display: flex;
+    padding: 50px;
+    background-color: #000;
+    border: 1px solid #ffd77f;
+    transition: all 0.5s;
+}
+
+.info-box:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.info-box > div:last-child {
+    padding-top: 20px;
+}
+
+.info-box img {
+    display: flex;
+    justify-content: left;
+    width: 300px;
+    margin-right: 100px;
+}
+
+.personal-info .info {
+    display: flex;
+    width: 400px;
+    line-height: 3.5rem;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.info p:first-child {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.info p:last-child {
+    display: flex;
+    justify-content: right;
+    width: 250px;
+}
+
+#sect2 .graphBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 100%;
+    margin: 0 35%;
+}
+
+#sect2 .graphBox .score {
+    width: 14%;
+    height: 50%;
+    border: 2px solid #ffd77f;
+    margin: 0 30px;
+    padding: 0 30px;
+    position: relative;
+    background: #fff;
+    border-radius: 50px;
+    flex: 4;
+    transform: translateY(100%);
+    opacity: 0;
+    cursor: pointer;
+}
+
+#sect2 .graphBox .score:hover {
+    animation: shakeY 1s ease-in;
+}
+
+#sect2 .graphBox.on .score:nth-child(1) {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1s 0s ease-in-out;
+}
+
+#sect2 .graphBox.on .score:nth-child(2) {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1s 0.2s ease-in-out;
+}
+
+#sect2 .graphBox.on .score:nth-child(3) {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1s 0.4s ease-in-out;
+}
+
+#sect2 .graphBox.on .score:nth-child(4) {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1s 0.6s ease-in-out;
+}
+
+#sect2 .graphBox.on .score:nth-child(5) {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1s 0.8s ease-in-out;
+}
+
+#sect2 .graphBox.on .score:nth-child(6) {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1s 1s ease-in-out;
+}
+
+#sect2 .graphBox .score p {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffd77f;
+    font-size: 16px;
+}
+
+#sect2 .graphBox .score p {
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+#sect2 .graphBox .score .myscore {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    color: #fff;
+    text-align: center;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: 20px;
+    border-radius: 0 0 50px 50px;
+    transition: all 0.5s;
+}
+
+#sect2 .graphBox .score .myscore:hover {
+    background-color: #ffd77f;
+}
+
+#sect2 .graphBox .score .photo {
+    background-color: #d5d5d5;
+}
+
+#sect2 .graphBox .score .illur {
+    background: #afafaf;
+}
+
+#sect2 .graphBox .score .html {
+    background-color: #8e8e8e;
+}
+
+#sect2 .graphBox .score .css {
+    background-color: #757575;
+}
+
+#sect2 .graphBox .score .js {
+    background-color: #5d5d5d;
+}
+
+#sect2 .graphBox .score .jq {
+    background-color: #404040;
+}
+
+section article.slideshow {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    cursor: pointer;
+    z-index: 99999999;
+}
+
+section article.slideshow .flickity-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #ffd77f;
+    border-radius: 50%;
+    border: none;
+}
+
+.flickity-button-icon {
+    color: #fff;
+}   
+
+section article.slideshow .flickity-button.previous {
+    left: 20%;
+    padding: 10px;
+}
+
+section article.slideshow .flickity-button.next {
+    right: 20%;
+    padding: 10px;
+}
+
+.web {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.webbox {
+    width: 1000px;
+    height: 600px;
+    background-color: rgba(255, 215, 127, 0.9);
+    border: 1px solid #ffd77f;
+    border-radius: 5px;
+    padding: 50px;
+    position: relative
+}
+
+.web img {
+    width: 100%;
+    position: relative;
+}
+
+.web .pc {
+    position: absolute;
+    width: 600px;
+    overflow: hidden;
+    left: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.web .tablet {
+    position: absolute;
+    overflow: hidden;
+    width: 300px;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.web .mobile {
+    position: absolute;
+    overflow: hidden;
+    width: 170px;
+    right: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pc .overlay {
+    width: 570px;
+    height: 325px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    background: url('../img/pcweb.png') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    transition: all 1s;
+}
+
+.pc:hover .overlay {
+    background-position: bottom center;
+}
+
+.tablet .overlay {
+    width: 279px;
+    height: 393px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background: url('../img/tweb.png') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    transition: all 1s;
+}
+
+.tablet:hover .overlay {
+    background-position: bottom center;
+}
+
+.mobile .overlay {
+    width: 154px;
+    height: 316px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url('../img/mweb.png') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    transition: all 1s;
+}
+
+.mobile:hover .overlay {
+    background-position: bottom center;
+}
+
+.pc_2 .overlay {
+    width: 570px;
+    height: 325px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    background: url('../img/pcweb2.png') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    transition: all 1s;
+}
+
+.tablet_2 .overlay {
+    width: 279px;
+    height: 393px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background: url('../img/tweb2.png') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    transition: all 1s;
+}
+
+.mobile_2 .overlay {
+    width: 154px;
+    height: 316px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url('../img/mweb2.png') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    transition: all 1s;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.contact form {
+    width: 700px;
+    border: 1px solid #ffd77f;
+    padding: 50px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+}
+
+col:nth-child(1) {
+    width: 20%
+}
+
+col:nth-child(2) {
+    width: auto
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ffd77f;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ffd77f;
+    background-color: rgba(255, 215, 127, 0.3);
+}
+
+td {
+    padding: 5px 0
+}
+
+@keyframes spin {
+    from {
+        transform: scale(0) rotateX(180deg);
+    }
+    to {
+        transform: scale(1) rotateX(0deg);
+    }
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    border: none;
+    padding: 10px;
+    background: #ffd77f;
+    border-radius: 5px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    position: relative;
+    transition: all 0.4s;
+    
+}
+
+.btn button:hover {
+    background: #000;
+    border: 1px solid #ffd77f;
+    border-radius: 5px;
+    color: #ffd77f;
+}
+
+
+.outer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f6d848;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chargeBox {
+    display: flex;
+    flex-flow: column;
+}
+
+.charge {
+    font-family: 'Reem Kufi Fun', sans-serif;
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1279px) {
+
+    .rwdweb .rwdT {
+        right: 10%;
+    }
+    
+    .rwdweb .rwdM {
+        right: 3%;
+    }
+}
